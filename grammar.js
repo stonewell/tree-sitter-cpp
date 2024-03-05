@@ -529,7 +529,7 @@ module.exports = grammar(C, {
       'try',
       optional($.field_initializer_list),
       field('body', $.compound_statement),
-      repeat1($.catch_clause),
+      optional(repeat1($.catch_clause)),
     ),
 
     constructor_or_destructor_definition: $ => seq(
@@ -903,7 +903,7 @@ module.exports = grammar(C, {
     try_statement: $ => seq(
       'try',
       field('body', $.compound_statement),
-      repeat1($.catch_clause),
+      optional(repeat1($.catch_clause)),
     ),
 
     catch_clause: $ => seq(

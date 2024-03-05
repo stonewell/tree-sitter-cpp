@@ -12148,7 +12148,7 @@
         },
         {
           "type": "CHOICE",
-          "members":[
+          "members": [
             {
               "type": "REPEAT1",
               "content": {
@@ -13671,7 +13671,7 @@
         },
         {
           "type": "CHOICE",
-          "members":[
+          "members": [
             {
               "type": "REPEAT1",
               "content": {
